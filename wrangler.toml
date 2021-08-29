@@ -1,11 +1,11 @@
-name = "cf-workers-status-page"
+name = "openmev-poolmonitor"
 workers_dev = true
 account_id = "25df8d18fce28bce3ded9a965ac20b80"
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 
 [triggers]
-crons = ["* * * * *"]
+crons = ["*/2 * * * *"]
 
 [site]
 bucket = "out"
